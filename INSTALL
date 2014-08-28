@@ -1,0 +1,13 @@
+install = 
+{
+  Dependencies= {},
+  InstallHierarchy =
+  {
+    {"/installer","/installer"},
+  },
+  PostAction = function()
+    shell.run("installer")
+    return true
+  end
+}
+return install
